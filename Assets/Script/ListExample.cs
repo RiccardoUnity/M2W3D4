@@ -48,10 +48,10 @@ public class ListExample : MonoBehaviour
             }
 
             //Costruisco la stringa da comunicare con Debug.Log()
-            listInString = "";
-            for (j = 0; j < listNumber.Count; j++)
+            listInString = listNumber[0].ToString();
+            for (j = 1; j < listNumber.Count; j++)
             {
-                listInString += listNumber[j].ToString();
+                listInString += ", " + listNumber[j].ToString();
             }
 
             //Comunico la stringa
